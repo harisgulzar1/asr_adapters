@@ -1203,8 +1203,8 @@ class Wav2Vec2PreTrainedModel(PreTrainedModel):
                 self._init_weights(module)
 
         # init lm head
-        if isinstance(self, Wav2Vec2ForCTC):
-            self._init_weights(self.lm_head)
+        # if isinstance(self, Wav2Vec2ForCTC):
+        #     self._init_weights(self.lm_head)
 
     def load_adapter(self, target_lang: str, force_load=True, **kwargs):
         r"""
